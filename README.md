@@ -49,20 +49,34 @@ tg.set([{
 
 ## Parameters
 ### Programs
-- Tint
-- Sinus X
-- Sinus Y
-- OR
-- XOR
-- Checker Board
-- Rectangle
-- Circle
-- Noise
-- Fractal Noise
-- Cellular Noise
-- Voronoi Noise
-- Cellular Fractal
-- Voronoi Fractal
-- Transform
-- Sine Distort
-- Twirl
+- tint
+- sinX
+- sinY
+- or
+- xor
+- checkerBoard
+- rectangle
+- circle
+- noise
+- fractalNoise
+- cellularNoise
+- voronoiNoise
+- cellularFractal
+- voronoiFractal
+- transform
+- sineDistort
+- twirl
+### Blend Modes
+- add
+- subtract
+- multiply
+- divide
+- and
+- or
+- xor
+- screen
+- difference
+- darken
+- lighten
+- overlay
+- exclusion
