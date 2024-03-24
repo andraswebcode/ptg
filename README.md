@@ -8,13 +8,36 @@ The Procedural Texture Generator is a JavaScript tool for creating textures and 
 <html>
 <head>
 	<meta charset="utf-8">
-  <script type="text/javascript" src="ptg.js"></script>
+	<script type="text/javascript" src="ptg.js"></script>
 </head>
 <body>
-
-  <canvas id="c" width="100" height="100"></canvas>
-
-  <script type="text/javascript" src="main.js"></script>
+	<canvas id="c" width="100" height="100"></canvas>
+	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
+```
+
+main.js
+```javascript
+const canvas = document.getElementById('c');
+const tg = new PTG.ProceduralTextureGenerator(canvas);
+tg.set([{
+	program:'sinX',
+	blendMode:'add',
+	tint:[0,1,0],
+	frequency:0.031,
+	offset:0
+},{
+	program:'sinY',
+	blendMode:'multiply',
+	tint:[0,1,0],
+	frequency:0.031,
+	offset:0
+},{
+	program:'twirl',
+	tint:[1,1,1],
+	radius:100,
+	strength:100,
+	position:[128,128]
+}]);
 ```
